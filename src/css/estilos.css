@@ -1,0 +1,162 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  /* =>depois de virgula é porque se carregar
+                                       a fonte poppins, carregar sans-serif que é font padrão */
+  max-width: 1280px;
+  /* para limitar o tamanho do corpo " body"*/
+  margin: 0 auto;
+  /* para centralizar a página*/
+  background-color: #5e5b5bad;
+  /*esse numero da cor é hexadimal colocando # */
+  color: #333333;
+}
+
+body.modo-escuro {
+  /*=> para mudar o tema*/
+  background-color: #212121;
+  color: #f5f5f5;
+}
+
+header {
+  background-color: green;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+}
+
+header .logo,
+header .imagem-botao {
+  width: 40px;
+  transition: 0.2s ease-in-out;
+}
+
+header #botao-alterar-tema {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+header .logo:hover,
+header .imagem-botoa:hover,
+/* tem que colocar hover no final para funcionar o comando*/
+main.cartao-pokemon:hover {
+  transform: scale(1.05);
+  /* esse comando é para colocar efeito de aumentar quando passar o mouse*/
+  cursor: pointer;
+}
+
+main {
+  background-color: honeydew;
+  padding: 25px;
+}
+
+ .listagem-pokemon {
+  display:flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center; /* Pra justificar o elemento no centro*/ 
+}
+
+main .cartao-pokemon {
+  background-color: #d8e3ec;
+  width: 200px;
+  padding: 15px;
+  display: flex; /* para alinhar os elementos*/
+  flex-direction: column; /* para ordenar os elementos um embaixo do outro*/
+  align-items: center; /* para centralizar os itens horizontalmente*/
+  gap: 15px; /* para dar espaçamentos entre os itens*/
+  border-radius: 15px;
+  /* esse é para borda redonda*/
+  transition: 0.2s ease-in-out;}
+  /* para fazer mudança de cor ao passar o mouse*/
+
+
+main .cartao-pokemon:hover {
+  background-color: #96d9d6;
+}
+
+.modo-escuro .cartao-pokemon {
+  background-color: #a8a8a8;
+}
+
+main .cartao-pokemon .informacoes {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #333333;
+  border-radius: 10px;
+}
+
+main .cartao-pokemon .informacoes span {
+  padding: 5px;
+  text-transform: uppercase;
+  font-size: 17px;
+}
+
+main .cartao-pokemon .gif { /* main .cartao-pokemon .gif => para padronizar o tamanho das figuras*/
+
+  width: 90px;
+  height: 90px;
+}
+
+main .cartao-pokemon .tipos {
+  padding: 8px;
+  border-radius: 10px;
+  display:flex;
+  gap: 15px;
+}
+
+.eletrico {
+  background-color: #90928c;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.animal {
+  background-color: #dae90e;
+  padding: 5px;
+  border-radius: 5px;
+}
+.grama {
+  background-color: #7ac74c;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.veneno {
+  background-color: #df67ddfb;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.fogo {
+  background-color: #ee8130;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.agua {
+  background-color: #6390f0;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.inseto {
+  background-color: #a6b91a;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+main .descricao {
+max-height: 100px;
+
+overflow:scroll;
+
+font-size: 14px;
+
+padding-right: 10px;
+}
+  /* padding-right=> Para margem á direita*/
+    /* font-size=> para o tamanho da fonte*/
+  /*scroll => é para criar a barra de rolagem*/
+  /* overflow=> (transbordar) para compactar o texto dentro do cartão*/
+  /*max-height=> para padronizar a altura do cartão*/
